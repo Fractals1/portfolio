@@ -1,0 +1,34 @@
+.offer
+	height: 410px
+	padding-top: 65px
+	padding-bottom: 32px
+	position: relative
+	background: #373737 url('../img/offer-bg.jpg') center no-repeat
+	color: $text-color-light
+	z-index: 1
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.6)
+		z-index: -1
+	&-form
+		display: flex
+		align-items: center
+		flex-direction: column
+		&__input
+			width: 365px
+			margin-bottom: 12px
+			text-align: center
+		&__btn
+			margin-left: 0
+			width: 180px
+		&__note
+			font-size: 14px
+			font-weight: 300
+			line-height: 30px
+			margin-top: 9px

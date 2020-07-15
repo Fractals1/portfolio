@@ -1,0 +1,339 @@
+.main
+	text-align: center
+	border-bottom: 2px solid #4c4c4c
+	&:after
+		content: ''
+		display: block
+		background: url("../img/main-flowers.png") no-repeat
+		left: 220px
+		top: 150px
+		width: 100%
+		height: 100%
+		position: fixed
+		z-index: -1
+	&-title
+		margin-top: 120px
+		margin-bottom: 33px
+		font-size: 34px
+		font-weight: 500
+		text-transform: uppercase
+		letter-spacing: 0.34px
+	&-subtitle
+		font-family: 'Gotham Pro Light'
+		font-size: 18px
+		font-weight: 300
+		letter-spacing: 0.18px
+		text-transform: uppercase
+		margin-bottom: 100px
+		span
+			font-family: 'Gotham Pro Medium'
+			font-weight: 500
+			letter-spacing: 0.18px
+	&-text
+		margin-top: 55px
+		margin-bottom: 36px
+		font-size: 19px
+		font-weight: 400
+		text-transform: uppercase
+		letter-spacing: 0.19px
+		span
+			font-family: 'Gotham Pro Medium'
+			font-weight: 500
+			letter-spacing: 0.19px	
+	&-button
+		margin-bottom: 77px
+	&-slider
+		max-width: 100%
+.main-slider .slick-slide
+	margin-left: 33px
+	margin-right: 33px
+	&:hover
+		cursor: pointer
+		background: radial-gradient(circle, rgba(242, 72, 65, 0.39), transparent 60%)
+	&:focus
+		outline: none
+.slider-arrow
+	height: 14px
+	width: 8px
+	position: absolute
+	&:hover
+		cursor: pointer
+	&_left
+		top: 50%
+		left: -11px
+		background: url('../img/main/header-arrow_left.png') center no-repeat 
+		&:hover
+			background: url(../img/main/header-arrow_left_active.png) center no-repeat
+	&_right
+		top: 50%
+		right: -12px
+		background: url('../img/main/header-arrow_right.png') center no-repeat 
+		&:hover
+			background: url('../img/main/header-arrow_right_active.png') center no-repeat
+.feedback
+	margin-top: 100px
+	&-title
+		text-align: center
+		font-size: 30px
+		font-weight: 500
+		text-transform: uppercase
+		letter-spacing: 0.3px
+		margin-bottom: 96px
+	&-slider
+	 height: 220px
+	 &-arrow
+	 	&_left
+	 		width: 21px
+	 		height: 34px
+	 		top: 50%
+	 		left: -11px
+	 		background: url('../img/feedback/feedback_arrow-left.png') center no-repeat 
+	 		&:hover
+	 			filter: grayscale(100%)
+	 	&_right
+	 		width: 21px
+	 		height: 34px
+	 		top: 50%
+	 		right: -12px
+	 		background: url('../img/feedback/feedback_arrow-right.png') center no-repeat 
+	 		&:hover
+	 			filter: grayscale(100%)
+		&__title
+			text-align: center
+			position: absolute
+			font-size: 20px
+			font-family: "Gotham Pro Medium"
+			font-weight: 500
+			letter-spacing: 0.2px
+			span
+				font-family: "Gotham Pro"
+				font-size: 18px
+				font-weight: 400
+				letter-spacing: 0.18px
+		&__img-block
+			display: flex
+			position: relative
+			justify-content: center
+			align-items: center
+			width: 220px
+			height: 220px
+			& img
+				border-radius: 50%
+				background-color: #292929
+				background-size: auto
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(41, 41, 41, 0.6)
+		&__item
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+		&__text
+			max-width: 490px
+			margin-bottom: 19px
+			font-size: 18px
+			font-weight: 400
+			letter-spacing: 0.18px
+			&-block
+				margin-left: 52px
+				display: flex
+				flex-direction: column
+.feedback-slider .slick-slide
+	display: flex !important
+	&:focus
+		outline: none
+.features
+	margin-top: 98px
+	border-bottom: 2px solid #4c4c4c
+	&-blocks
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin-bottom: 100px
+	&-block
+		text-align: center
+		align-items: center
+		display: flex
+		justify-content: center
+		flex-direction: column
+		flex-basis: 30%
+		width: 262px
+		& img 
+			height: 81px
+	&-text
+		margin-top: 30px
+		font-size: 20px
+		font-weight: 500
+		line-height: 25px
+		text-transform: uppercase
+		letter-spacing: 0.2px
+.construct
+	text-align: center
+	margin-bottom: 120px
+	&-title
+		margin-top: 93px
+		margin-bottom: 27px
+		font-size: 30px
+		font-weight: 500
+		text-transform: uppercase
+		letter-spacing: 0.3px
+		span
+			color: #ff1844
+			letter-spacing: 0.3px
+	&-subtitle
+		font-size: 18px
+		font-weight: 400
+		letter-spacing: 0.18px
+		margin-bottom: 77px
+	&-blocks
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+	&-block
+		width: 210px
+		text-align: center
+		border: 3px solid #ffffff
+		margin-bottom: 30px
+	&-flower
+		&__img
+			margin-top: 33px
+		&__title
+			margin-top: 23px
+			font-size: 20px
+			font-weight: 500
+			text-transform: uppercase
+			letter-spacing: 0.2px	
+		&__count-block
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin-bottom: 30px
+		&__button
+			padding: 0
+			width: 140px
+			height: 40px
+			background-color: #f24841
+			font-size: 14px
+			font-weight: 500
+			text-transform: uppercase
+			letter-spacing: 0.14px
+
+.color-picker
+	align-items: center
+	display: flex
+	flex-direction: row
+	justify-content: center
+.box
+	margin: 0 5px
+	width: 20px
+	height: 20px
+	&:hover
+		border: 1px solid #ffffff
+
+.white
+	background-color: #ffffff
+.light-rose
+	background-color: #f7b496
+.rose
+	background-color: #ed366e
+.red
+	background-color: #ff0000
+.blue
+	background-color: #12129d
+
+.button-plus, .button-minus
+	border: none
+	background: none
+	padding: 0
+	width: 9px
+	height: 9px
+	color: #ffffff
+	font-family: "Gotham Pro"
+	font-size: 16px
+	font-weight: 500
+	// Text style for "+,"
+	letter-spacing: 0.16px
+	&:hover
+		box-shadow: none
+		border: none
+		background: none
+		padding: 0
+.button-plus
+	margin-left: 15px
+.button-minus
+	margin-right: 15px
+.count
+	&-title
+		margin-top: 20px
+		margin-bottom: 10px
+	&-block
+		margin-bottom: 20px
+.quantity
+	text-align: center
+	background-color: #292929
+	color: #ffffff
+	width: 40px
+	height: 40px
+	border: 2px solid #ffffff
+	font-size: 16px
+	font-weight: 500
+	// Text style for "1, 5"
+	letter-spacing: 0.16px
+.all-flowers
+	color: #f24841
+	font-family: "Gotham Pro"
+	font-size: 14px
+	font-weight: 400
+	// Text style for "Все цветы"
+	letter-spacing: 0.14px
+.arrow_down
+	margin-left: 14px
+.cta
+	z-index: 1
+	color: #ffffff
+	text-align: center
+	padding-top: 100px
+	background-color: #1a1a1a
+	border-bottom: 1px solid #474747
+	&-title
+		margin-bottom: 30px
+		font-size: 30px
+		font-weight: 500
+		text-transform: uppercase
+		letter-spacing: 0.3px
+	&-call
+		color: #ffffff
+		font-size: 30px
+		font-weight: 500
+		text-transform: uppercase
+		letter-spacing: 0.3px
+		border-bottom: 1px solid #ffffff
+		&:hover
+			color: darkgray
+			text-decoration: none
+	&-text
+		margin-top: 53px
+		font-size: 14px
+		font-weight: 400
+		letter-spacing: 0.14px
+	&-phone
+		color: #ffffff
+		font-size: 36px
+		font-weight: 400
+		letter-spacing: 0.36px
+		&:hover
+			color: darkgray
+			text-decoration: none
+	&-block
+		margin-bottom: 84px
+	
+

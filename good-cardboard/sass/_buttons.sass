@@ -1,0 +1,43 @@
+.button
+	font:
+		family: 'Roboto'
+		size: 14px
+		weight: 500
+	line-height: 22px
+	border: 1px solid transparent
+	padding: 12px 18px
+	color: $text-color-light
+	background-color: $active-color
+	border-radius: 5px
+	&-o
+		background-color: transparent
+		color: $text-color-dark
+		border: 1px solid rgba(#373737, 0.5)
+		&:hover
+			cursor: pointer
+			background-color: lighten($active-color, 5)
+			border: 1px solid transparent
+			color: $text-color-light
+	img
+		margin-right: 7px
+		vertical-align: middle
+	&:hover
+		cursor: pointer
+		background-color: lighten($active-color, 5)
+		color: $text-color-light
+.submit__button
+	z-index: 1
+	font:
+		family: 'Roboto'
+		size: 15px
+		weight: 500
+	width: 161px
+	height: 56px
+	border: none 
+	color: $text-color-light
+	background-color: $active-color
+	border-radius: 5px
+	&:hover
+		cursor: pointer
+		background-color: lighten($active-color, 5)
+		color: $text-color-light

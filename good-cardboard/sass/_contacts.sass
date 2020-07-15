@@ -1,0 +1,74 @@
+.contacts
+	position: relative
+	&-block
+		z-index: 1
+		position: absolute
+		background-color: #fff
+		left: 24%
+		top: 73px
+		padding-top: 33px
+		padding-left: 64px
+		padding-right: 34px
+		padding-bottom: 39px
+		&__title
+			display: block
+			font-size: 18px
+			font-weight: 700	
+			& span
+				margin-top: 13px
+				font-weight: 300
+				font-size: 16px
+		& a
+			color: #373737
+			font-family: 'Roboto', sans-serif
+			text-decoration: none
+			font-weight: 300
+			font-size: 16px
+			&:hover
+				color: lighten($text-color-dark, 50%)
+				cursor: pointer
+		&__address
+			font-size: 18px
+			font-weight: 300
+			&:before
+				content: ''
+				display: block
+				background: url('../img/point.png') no-repeat
+				width: 17px
+				height: 25px
+				left: 35px
+    top: 35px
+				position: absolute
+				z-index: 1
+		&__phone
+			margin-top: 25px	
+			&:before
+				content: ''
+				display: block
+				background: url('../img/phone.png') no-repeat
+				width: 15px
+				height: 22px
+				left: 35px
+    top: 170px
+				position: absolute
+				z-index: 1
+		&__cta
+			margin-top: 14px
+			margin-bottom: 25px
+		&__email
+			margin-top: 25px
+			&:before
+				content: ''
+				display: block
+				background: url('../img/mail.png') no-repeat
+				width: 20px
+				height: 14px
+				left: 35px
+				top: 362px
+				position: absolute
+				z-index: 1
+	h2
+		display: none
+.map
+	max-width: 100vw
+	height: 550px

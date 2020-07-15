@@ -1,0 +1,78 @@
+.container
+.header
+	&-block
+		width: 100%
+		margin-top: 56px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		&:after
+			content: ''
+			display: block
+			background: url("../img/header/header-flower.png") no-repeat
+			left: 1024px
+			top: 0px
+			width: 39px
+			height: 24px
+			position: fixed
+			z-index: -1
+	&-logo 
+		margin-bottom: 24px
+		background-size: 100%
+		width: 156px
+		height: 40px
+ &-text
+ 	width: 122px
+ 	margin-bottom: 23px
+ 	height: 39px
+ 	margin-left: 33px
+ 	font-size: 12px
+ 	font-family: 'Gotham Pro Light'
+ 	font-weight: 300
+ 	letter-spacing: 0.12px
+ 	text-align: justify
+ 	span
+ 		color: #ff3469
+ 		font-family: 'Gotham Pro Medium'
+ 		font-weight: 500
+ 		letter-spacing: 0.12px
+ 	&-block
+ 		display: flex
+ 		flex-direction: row
+	&-contacts
+		margin-left: auto
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		&__phone 
+			& a
+				color: #ffffff
+				font-size: 20px
+				font-weight: 500
+				cursor: pointer
+				text-decoration: none
+				line-height: 20px
+				&:hover
+					color: lighten($text-color-dark, 50%)
+				& span
+					margin-top: 7px
+					font-size: 12px
+					line-height: 12px
+					font-weight: 400
+					letter-spacing: 0.12px
+		&__call a
+			color: #ff3469
+			font-family: "Gotham Pro"
+			font-size: 16px
+			line-height: 16px
+			font-weight: 400
+			letter-spacing: 0.16px
+			text-decoration: underline
+		&__button
+			height: 45px
+			margin-left: 15px
+			vertical-align: middle
+			line-height: 19px
+			img
+				vertical-align: middle
+				margin-bottom: 3px 

@@ -1,0 +1,58 @@
+.features
+	background-color: $light-bg-color
+	padding-top: 49px
+	padding-bottom: 25px
+	&-blocks
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&-block
+		display: flex
+		align-items: center
+		flex-basis: 31%
+		background-color: #ffffff
+		padding: 28px 19px
+		margin-bottom: 30px
+		&__title
+			font-family: "Roboto Bold"
+			font-size: 15px
+			font-weight: 700
+			margin-bottom: 5px
+		&__text
+			width: 202px
+			font-size: 14px
+			font-family: "Roboto Light"
+			font-weight: 300
+			text-align: justify
+		&__img
+			margin-right: 9px
+.numbers
+	text-align: center
+	margin-bottom: 37px
+	&-block
+		display: inline-block
+		vertical-align: top
+		width: 32%
+		&__title
+			margin-bottom: 10px
+			color: $active-color
+			font-family: "Roboto Black"
+			font-size: 36px
+			font-weight: 900
+			sup
+				font-size: 18px
+		&__text
+			font-size: 16px
+			font-weight: 400
+.section-title
+	text-align: center
+	font-size: 27px
+	font-weight: 700
+	text-transform: uppercase
+	margin-bottom: 29px
+	&::after
+		margin-top: 12px
+		content: ''
+		display: block
+		background: url("../img/line.png") center no-repeat
+		height: 6px

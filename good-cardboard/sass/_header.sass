@@ -1,0 +1,39 @@
+.header
+	margin-top: 45px
+	&-logo
+		background: url(../img/header-logo.png) center no-repeat
+		background-size: 100%
+		width: 191px
+		height: 61px
+		margin-top: 15px
+  margin-bottom: 15px
+	&-contacts
+		padding: 15px 0
+		display: flex
+		justify-content: flex-end
+		text-transform: uppercase
+		letter-spacing: 0.3px
+		&__button
+			height: 45px
+			margin-left: 15px
+			vertical-align: middle
+			line-height: 19px
+			img
+				vertical-align: middle
+				margin-bottom: 3px
+		&__phone
+			& a
+				cursor: pointer
+				text-decoration: none
+				color: #373737
+				&:hover
+					color: lighten($text-color-dark, 50%)
+			&s
+				display: flex
+				align-items: center
+			font-size: 22px
+			margin-right: 13px
+			&:first-child
+				border-right: 1px solid #cfcfd0
+				padding-right: 13px
+				height: 32px

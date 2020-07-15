@@ -1,0 +1,95 @@
+.nav
+	z-index: 4
+	width: 100%
+	top: 0
+	margin: 0 auto
+	position: fixed 
+	display: flex
+	justify-content: space-between
+	height: 44px
+	background-color: #373737
+	&-item
+		& a
+			position: relative
+			padding: 12px 15px
+			color: #ffffff
+			text-decoration: none
+			font-size: 12px
+			font-weight: 400
+			line-height: 22px
+			text-transform: uppercase
+			&:hover
+				text-decoration: none
+				background-color: rgba(255, 255,255, 0.4)
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			height: 25px
+			width: 1px
+			top: 10px
+			border-right: 1px dotted #d1d1d1
+		&:first-child:before
+			content: none
+.menu
+	&-link
+		z-index: 9
+		position: fixed
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  /*box-shadow: 1px 1px 5px rgba(0,0,0,.4)*/
+  cursor: pointer
+  top: 8px
+  left: 5px
+  background-color: #fff
+  transition: all 1s
+		span
+			position: absolute
+ 	 display: block
+ 	 width: 20px
+ 	 height: 3px
+ 	 top: 50%
+ 	 transform: translateY(-50%)
+ 	 left: 50%
+ 	 transform: translateX(-45%)
+ 	 background: #000
+ 	 transition: .5s
+ 	 &:before
+ 	 	position: absolute
+ 	 	top: -8px
+ 	 	content: ''
+ 	 	display: block
+ 	 	width: 20px
+ 	 	height: 3px
+ 	 	background: #000
+ 	 	transition: .2s
+ 	 &:after
+ 	 	position: absolute
+ 	 	top: 8px
+ 	 	content: ''
+ 	 	display: block
+ 	 	width: 20px
+ 	 	height: 3px
+ 	 	background: #000
+ 	 	transition: .2s
+		&-active span
+			transform: rotate(180deg)
+			left: 25%
+			&:before
+				transform: rotate(45deg)
+			 width: 10px
+			 transform-origin: right top
+			 top: 0
+			 right: 0
+			&:after
+				transform: rotate(-45deg)
+				width: 10px
+				transform-origin: right bottom
+				top: 0
+				right: 0
+	

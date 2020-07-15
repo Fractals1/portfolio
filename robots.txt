@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /$
+Disallow: /
+
+Sitemap: https://ironforme.ru/sitemap.xml
+Host: https://ironforme.ru

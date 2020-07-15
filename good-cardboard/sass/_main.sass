@@ -1,0 +1,159 @@
+/*a:hover
+	color: $active-color*/
+.yamaps
+	color: #FFFFFF
+	font-weight: 400
+.main
+	height: 530px
+	padding-top: 65px
+	padding-bottom: 75px
+	position: relative
+	background: #373737 url('../img/main/products-bg.jpg') center no-repeat
+	color: $text-color-light
+	z-index: 1
+	&-block
+		position: relative
+		top: 35px
+	/* делаем затемнение */
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.6)
+		z-index: -1
+	&-img
+		position: relative
+		right: 101px
+		width: 200%
+		height: 100%
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 20px
+			left: 100px
+			z-index: -1
+			width: 390px
+			height: 390px
+			border: 1px solid #ffffff
+			border-radius: 50%
+			opacity: 0.6
+		&::after
+			content: ''
+			display: block
+			background: url('../img/main/rst.png') no-repeat
+			left: 100px
+			top: 338px
+			width: 60px
+			height: 50px
+			position: absolute
+			z-index: 1
+	&-text
+		max-width: 535px
+		&__form
+			margin-top: 15px
+			margin-left: 6px
+			max-width: 45vw
+			height: 240px
+			padding-top: 22px
+			padding-left: 26px
+			font-size: 20px
+			font-family: "Roboto Light"
+			font-weight: 300
+			position: relative
+			border-radius: 5px
+			line-height: 30px
+			z-index: 1
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(255, 255, 255, 0.2)
+				border-radius: 3px
+				z-index: -1
+			& span
+				padding-left: 19px
+				color: #ffffff
+				font-family: Roboto
+				font-size: 14px
+				font-weight: 300
+				line-height: 30px
+		&__title
+			z-index: 1
+			margin-bottom: 10px
+			font-size: 41px
+			font-weight: 700
+			line-height: 42px
+			font-family: 'Roboto Bold'
+		&__subtitle
+			font-size: 28px
+			font-weight: 400
+			margin-left: 5px
+
+.form-text__subtext
+	margin-bottom: 15px
+	font-size: 20px
+	font-family: "Roboto Bold"
+	font-weight: 700
+	text-transform: uppercase
+	line-height: 30px
+	display: block
+.form-input__block
+	z-index: 1
+.phone-input
+	z-index: 1
+	padding-left: 19px
+	padding-top: 21px
+	padding-bottom: 21px
+	margin-right: 10px
+	border: 1px solid #ffffff
+	border-radius: 5px
+	color: #373737
+	max-height: 56px
+	width: 311px
+	font-family: Roboto
+	font-size: 14px
+	font-weight: 300
+
+@keyframes move
+	from
+		opacity: 0
+		bottom: -100px
+		transform: rotate(90deg)
+	to
+		opacity: 1
+		bottom: 0
+		transform: rotate(0deg)
+
+.animate
+	animation-name: move
+	animation-duration: 1s
+	animation-delay: 0.4s
+
+.slider-arrow
+	position: absolute
+	top: 0
+	height: 100%
+	width: 22px
+	z-index: 3
+	border: 1px solid $active-color
+	&:hover
+		cursor: pointer
+	&_right
+		right: 0
+		background: url(../img/arrow-right.png) center no-repeat
+		&:hover
+			background: $active-color url(../img/arrow-right_active.png) center no-repeat
+	&_left
+		left: 0
+		background: url(../img/arrow-left.png) center no-repeat
+		&:hover
+			background: $active-color url(../img/arrow-left_active.png) center no-repeat
